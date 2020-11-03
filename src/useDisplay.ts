@@ -23,19 +23,42 @@ export const useDisplay = () => {
       return;
     }
 
-    setTimeout(pollSource, 1000);
+    setTimeout(pollSource, 500);
   };
 
   onMounted(pollSource);
 
-  const playedItem = computed(() =>
-    playlist.value?.Playlist.PlaylistItem.find(
-      item => item.$.State === 'playing'
-    )
-  );
-  const playlistItems = computed(
-    () => playlist.value?.Playlist.PlaylistItem || []
+  const playlistItems = computed(() =>
+    (playlist.value?.Playlist.PlaylistItem || []).map(data => {
+      const classes = data.$.State === 'playing' ? ['table-primary'] : [];
+
+      const start = data.$.State === 'none' ? data.$.Time : 'En cours';
+
+      const displayProgressBar = data.$.State === 'playing';
+
+      const label =
+        data.$.State === 'playing'
+          ? `${data.$.PlaybackPosition}s / ${data.$.PlaybackEnd}s`
+          : `0s / ${data.Duration}s`;
+
+      const completion =
+        data.$.State === 'playing'
+          ? (parseFloat(data.$.PlaybackPosition) /
+              parseFloat(data.$.PlaybackEnd)) *
+            100
+          : 0;
+
+      return {
+        id: data.DatabaseID,
+        title: data.Title,
+        classes,
+        start,
+        displayProgressBar,
+        label,
+        completion
+      };
+    })
   );
 
-  return { playedItem, playlistItems };
+  return { playlistItems };
 };
