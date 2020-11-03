@@ -14,7 +14,7 @@ export const useDisplay = () => {
   const updateLocalTimer = () => {
     millisecondsSinceLastPolling.value =
       new Date().getTime() - lastPolling.value;
-    setTimeout(updateLocalTimer, 100);
+    requestAnimationFrame(updateLocalTimer);
   };
 
   const pollSource = async () => {
@@ -34,10 +34,12 @@ export const useDisplay = () => {
     }
 
     setTimeout(pollSource, 500);
-    updateLocalTimer();
   };
 
-  onMounted(pollSource);
+  onMounted(() => {
+    pollSource();
+    requestAnimationFrame(updateLocalTimer);
+  });
 
   const playlistItems = computed(() =>
     (playlist.value?.Playlist.PlaylistItem || []).map(data => {
@@ -64,9 +66,9 @@ export const useDisplay = () => {
 
       const label =
         data.$.State === 'playing'
-          ? `${(playbackPosition / 100).toFixed(2)}s / ${(
+          ? `${(playbackPosition / 100).toFixed(0)}s / ${(
               playbackEnd / 100
-            ).toFixed(2)}s`
+            ).toFixed(0)}s`
           : `0s / ${data.Duration}s`;
 
       const progressBarColor =
