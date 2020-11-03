@@ -5,6 +5,8 @@ import axios from 'axios';
 import { Playlist } from './types';
 
 const sourceUrl = process.env.VUE_APP_XML_SOURCE;
+const username = process.env.VUE_APP_AUTH_USERNAME;
+const password = process.env.VUE_APP_AUTH_PASSWORD;
 
 export const useDisplay = () => {
   const playlist = ref<Playlist>();
@@ -21,7 +23,15 @@ export const useDisplay = () => {
     if (!sourceUrl) return;
 
     try {
-      const result = await axios.get<string>(sourceUrl);
+      const result = await axios.get<string>(sourceUrl, {
+        auth:
+          username && password
+            ? {
+                username,
+                password
+              }
+            : undefined
+      });
 
       playlist.value = await parseStringPromise(result.data, {
         explicitArray: false
