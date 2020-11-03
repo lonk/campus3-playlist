@@ -25,7 +25,7 @@ const App = defineComponent({
                 {data.displayProgressBar ? (
                   <div class="progress">
                     <div
-                      class="progress-bar progress-bar-striped"
+                      class={data.progressBarColor}
                       role="progressbar"
                       style={`width: ${data.completion}%`}
                       aria-valuenow={data.completion}

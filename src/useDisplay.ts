@@ -8,6 +8,14 @@ const sourceUrl = process.env.VUE_APP_XML_SOURCE;
 
 export const useDisplay = () => {
   const playlist = ref<Playlist>();
+  const millisecondsSinceLastPolling = ref(0);
+  const lastPolling = ref(0);
+
+  const updateLocalTimer = () => {
+    millisecondsSinceLastPolling.value =
+      new Date().getTime() - lastPolling.value;
+    setTimeout(updateLocalTimer, 100);
+  };
 
   const pollSource = async () => {
     if (!sourceUrl) return;
@@ -18,35 +26,53 @@ export const useDisplay = () => {
       playlist.value = await parseStringPromise(result.data, {
         explicitArray: false
       });
+
+      lastPolling.value = new Date().getTime();
     } catch (err) {
       console.log(err);
       return;
     }
 
     setTimeout(pollSource, 500);
+    updateLocalTimer();
   };
 
   onMounted(pollSource);
 
   const playlistItems = computed(() =>
     (playlist.value?.Playlist.PlaylistItem || []).map(data => {
-      const classes = data.$.State === 'playing' ? ['table-primary'] : [];
+      const classes = data.$.State === 'playing' ? 'table-primary' : '';
 
       const start = data.$.State === 'none' ? data.$.Time : 'En cours';
 
       const displayProgressBar = data.$.State === 'playing';
 
-      const label =
+      const playbackEnd =
+        data.$.State === 'playing' ? parseFloat(data.$.PlaybackEnd) * 100 : 1;
+
+      const playbackPosition =
         data.$.State === 'playing'
-          ? `${data.$.PlaybackPosition}s / ${data.$.PlaybackEnd}s`
-          : `0s / ${data.Duration}s`;
+          ? Math.min(
+              parseFloat(data.$.PlaybackPosition) * 100 +
+                millisecondsSinceLastPolling.value,
+              playbackEnd
+            )
+          : 0;
 
       const completion =
+        data.$.State === 'playing' ? (playbackPosition / playbackEnd) * 100 : 0;
+
+      const label =
         data.$.State === 'playing'
-          ? (parseFloat(data.$.PlaybackPosition) /
-              parseFloat(data.$.PlaybackEnd)) *
-            100
-          : 0;
+          ? `${(playbackPosition / 100).toFixed(2)}s / ${(
+              playbackEnd / 100
+            ).toFixed(2)}s`
+          : `0s / ${data.Duration}s`;
+
+      const progressBarColor =
+        playbackEnd - playbackPosition < 10000
+          ? 'progress-bar progress-bar-striped bg-danger'
+          : 'progress-bar progress-bar-striped';
 
       return {
         id: data.DatabaseID,
@@ -55,7 +81,8 @@ export const useDisplay = () => {
         start,
         displayProgressBar,
         label,
-        completion
+        completion,
+        progressBarColor
       };
     })
   );
