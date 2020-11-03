@@ -6,15 +6,17 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "xml": "static xml -p 8500"
+    "xml": "static xml -p 8500 -H '{\"Access-Control-Allow-Origin\": \"*\"}'"
   },
   "dependencies": {
+    "axios": "^0.21.0",
     "core-js": "^3.6.5",
     "node-static": "^0.7.11",
     "vue": "^3.0.0",
-    "xml-js": "^1.6.11"
+    "xml2js": "^0.4.23"
   },
   "devDependencies": {
+    "@types/xml2js": "^0.4.5",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
     "@vue/babel-plugin-jsx": "^1.0.0-rc.3",

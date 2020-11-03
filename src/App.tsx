@@ -1,10 +1,11 @@
-import { ref, defineComponent } from 'vue';
+import { defineComponent } from 'vue';
+import { useDisplay } from './useDisplay';
 
 const App = defineComponent({
   setup() {
-    const foo = ref('Foo');
+    const { playedItem, nextItems } = useDisplay();
 
-    return () => <div>{foo.value}</div>;
+    return () => <div></div>;
   }
 });
 
