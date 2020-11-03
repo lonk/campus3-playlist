@@ -1,5 +1,7 @@
 export interface Playlist {
-  PlaylistItem: (PlayingItem | NoneItem)[];
+  Playlist: {
+    PlaylistItem: (PlayingItem | NoneItem)[];
+  };
 }
 
 type PlayingItem = {
@@ -9,7 +11,8 @@ type PlayingItem = {
     PlaybackEnd: string;
   };
   Title: string;
-  DatabaseId: string;
+  DatabaseID: string;
+  Duration: string;
 };
 
 type NoneItem = {
@@ -18,5 +21,6 @@ type NoneItem = {
     Time: string;
   };
   Title: string;
-  DatabaseId: string;
+  DatabaseID: string;
+  Duration: string;
 };

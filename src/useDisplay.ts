@@ -28,10 +28,14 @@ export const useDisplay = () => {
 
   onMounted(pollSource);
 
-  const playedItem = computed(() => playlist.value?.PlaylistItem[0]);
-  const nextItems = computed(() =>
-    playlist.value?.PlaylistItem.filter(item => item.$.State === 'none')
+  const playedItem = computed(() =>
+    playlist.value?.Playlist.PlaylistItem.find(
+      item => item.$.State === 'playing'
+    )
+  );
+  const playlistItems = computed(
+    () => playlist.value?.Playlist.PlaylistItem || []
   );
 
-  return { playedItem, nextItems };
+  return { playedItem, playlistItems };
 };
