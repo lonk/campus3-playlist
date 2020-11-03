@@ -5,11 +5,14 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "xml": "static xml -p 8500"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^3.0.0"
+    "node-static": "^0.7.11",
+    "vue": "^3.0.0",
+    "xml-js": "^1.6.11"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.33.0",

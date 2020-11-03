@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?><Playlist Version="156382">
+  <PlaylistItem Class="File" Version="156382" State="playing" Time="00:00:00" Player="0" PlaybackPosition="19.408" PlaybackEnd="26.043" DisplayEnd="26.043">
+    <Filename>\\nas\mairlist\Jazler Radio 2 Logs\SpotLogs\Forum Campus\FC 33 adresse.wav</Filename>
+    <Title>FC 33 adresse</Title>
+    <Duration>26.507</Duration>
+    <Database>mAirListDB:{C478F27C-A0A2-4A6C-AA0B-242F669CBB00}</Database>
+    <DatabaseID>5360</DatabaseID>
+    <Timing>Soft</Timing>
+    <FixTime>08:44:00</FixTime>
+    <Markers>
+      <Marker Type="FadeOut" Position="26.043"/>
+      <Marker Type="CueOut" Position="26.507"/>
+    </Markers>
+  </PlaylistItem>
+  <PlaylistItem Class="File" Version="156382" State="none" Time="08:43:03">
+    <Filename>\\nas\mairlist\Jazler Radio 2 Logs\SpotLogs\Météos\Météo Matin 201103.wav</Filename>
+    <Title>Météo Matin 201103</Title>
+    <Duration>21.243</Duration>
+    <Database>mAirListDB:{C478F27C-A0A2-4A6C-AA0B-242F669CBB00}</Database>
+    <DatabaseID>5586</DatabaseID>
+    <Markers>
+      <Marker Type="FadeOut" Position="21.131"/>
+      <Marker Type="CueOut" Position="21.243"/>
+    </Markers>
+  </PlaylistItem>
+  <PlaylistItem Class="File" Version="156382" State="none" Time="08:43:24">
+    <Filename>\\nas\mairlist\Jazler Radio 2 Logs\SpotLogs\Bonne Journée Campus\Jingle Bonne Journée Campus.wav</Filename>
+    <Title>Bonne Journée Sur Campus</Title>
+    <Type>StationID</Type>
+    <Duration>5.506</Duration>
+    <Database>mAirListDB:{C478F27C-A0A2-4A6C-AA0B-242F669CBB00}</Database>
+    <DatabaseID>3884</DatabaseID>
+    <Markers>
+      <Marker Type="FadeOut" Position="4.584"/>
+      <Marker Type="CueOut" Position="5.506"/>
+    </Markers>
+  </PlaylistItem>
+  <PlaylistItem Class="File" Version="156382" State="none" Time="08:43:29">
+    <Filename>\\nas\mairlist\Jazler Radio 2 Logs\JingleLogs\JINGLE 2010 2011\JINGLE Remix 2.wav</Filename>
+    <Title>Découverte Musicale bis</Title>
+    <Type>Jingle</Type>
+    <Duration>5.875</Duration>
+    <Database>mAirListDB:{C478F27C-A0A2-4A6C-AA0B-242F669CBB00}</Database>
+    <DatabaseID>19</DatabaseID>
+    <Attributes>
+      <Item>
+        <Name>Genre</Name>
+        <Value>Other</Value>
+      </Item>
+    </Attributes>
+    <Markers>
+      <Marker Type="CueIn" Position="0.102"/>
+      <Marker Type="FadeIn" Position="0.188"/>
+      <Marker Type="FadeOut" Position="5.665"/>
+      <Marker Type="CueOut" Position="5.801"/>
+    </Markers>
+  </PlaylistItem>
+  <PlaylistItem Class="File" Version="156382" State="none" Time="08:43:34">
+    <Filename>\\nas\mairlist\Jazler Radio 2 Logs\MusicLogs\Etranger TC\Ruel\Ruel - As Long As You Care.mp3</Filename>
+    <Title>As Long As You Care</Title>
+    <Artist>Ruel</Artist>
+    <Type>Music</Type>
+    <Duration>193.216</Duration>
+    <Database>mAirListDB:{C478F27C-A0A2-4A6C-AA0B-242F669CBB00}</Database>
+    <DatabaseID>5493</DatabaseID>
+    <Markers>
+      <Marker Type="CueIn" Position="0.248"/>
+      <Marker Type="StartNext" Position="184.791"/>
+      <Marker Type="FadeOut" Position="184.950"/>
+      <Marker Type="CueOut" Position="186.892"/>
+    </Markers>
+  </PlaylistItem>
+  <PlaylistItem Class="File" Version="156382" State="none" Time="08:46:39">
+    <Filename>\\nas\mairlist\Jazler Radio 2 Logs\JingleLogs\JINGLE 2010 2011\JINGLES-08.mp3</Filename>
+    <Title>Toujours Plus Proche De Toi</Title>
+    <Type>Jingle</Type>
+    <Duration>7.903</Duration>
+    <Database>mAirListDB:{C478F27C-A0A2-4A6C-AA0B-242F669CBB00}</Database>
+    <DatabaseID>32</DatabaseID>
+    <Attributes>
+      <Item>
+        <Name>Genre</Name>
+        <Value>Other</Value>
+      </Item>
+    </Attributes>
+    <Markers>
+      <Marker Type="CueIn" Position="0.132"/>
+      <Marker Type="FadeOut" Position="5.580"/>
+      <Marker Type="CueOut" Position="6.523"/>
+    </Markers>
+  </PlaylistItem>
+  <PlaylistItem Class="File" Version="156382" State="none" Time="08:46:44">
+    <Filename>\\nas\mairlist\Jazler Radio 2 Logs\MusicLogs\Français TC\Menech'\Menech' - Mémoires.mp3</Filename>
+    <Title>Mémoires</Title>
+    <Artist>Menech'</Artist>
+    <Type>Music</Type>
+    <Duration>204.030</Duration>
+    <Database>mAirListDB:{C478F27C-A0A2-4A6C-AA0B-242F669CBB00}</Database>
+    <DatabaseID>5191</DatabaseID>
+    <Markers>
+      <Marker Type="CueIn" Position="0.001"/>
+      <Marker Type="StartNext" Position="201.416"/>
+      <Marker Type="FadeOut" Position="201.661"/>
+      <Marker Type="CueOut" Position="203.298"/>
+    </Markers>
+  </PlaylistItem>
+  <PlaylistItem Class="File" Version="156382" State="none" Time="08:50:06">
+    <Filename>\\nas\mairlist\Jazler Radio 2 Logs\JingleLogs\JINGLE 2010 2011\JINGLE Remix 8.wav</Filename>
+    <Title>Jingle 8</Title>
+    <Type>Jingle</Type>
+    <Duration>2.793</Duration>
+    <Database>mAirListDB:{C478F27C-A0A2-4A6C-AA0B-242F669CBB00}</Database>
+    <DatabaseID>25</DatabaseID>
+    <Attributes>
+      <Item>
+        <Name>Genre</Name>
+        <Value>Other</Value>
+      </Item>
+    </Attributes>
+    <Markers>
+      <Marker Type="CueIn" Position="0.052"/>
+      <Marker Type="FadeOut" Position="2.662"/>
+      <Marker Type="CueOut" Position="2.739"/>
+    </Markers>
+  </PlaylistItem>
+  <PlaylistItem Class="File" Version="156382" State="none" Time="08:50:08">
+    <Filename>\\nas\mairlist\Jazler Radio 2 Logs\MusicLogs\Etranger TC\Beck\Beck - Sexx Laws.mp3</Filename>
+    <Title>Sexx Laws</Title>
+    <Artist>Beck</Artist>
+    <Type>Music</Type>
+    <Duration>219.894</Duration>
+    <Comment>Òîëüêî äëÿ îçíàêîìëåíèÿ</Comment>
+    <Database>mAirListDB:{C478F27C-A0A2-4A6C-AA0B-242F669CBB00}</Database>
+    <DatabaseID>406</DatabaseID>
+    <Attributes>
+      <Item>
+        <Name>Genre</Name>
+        <Value>www.mp3-ogg.ru</Value>
+      </Item>
+      <Item>
+        <Name>Piste</Name>
+        <Value>1</Value>
+      </Item>
+      <Item>
+        <Name>Album</Name>
+        <Value>Midnite Vultures</Value>
+      </Item>
+    </Attributes>
+    <Markers>
+      <Marker Type="CueIn" Position="0.940"/>
+      <Marker Type="StartNext" Position="213.861"/>
+      <Marker Type="FadeOut" Position="213.934"/>
+      <Marker Type="CueOut" Position="215.641"/>
+    </Markers>
+  </PlaylistItem>
+  <PlaylistItem Class="File" Version="156382" State="none" Time="08:53:41">
+    <Filename>\\nas\mairlist\Jazler Radio 2 Logs\JingleLogs\JINGLE 2010 2011\JINGLE Remix 7.wav</Filename>
+    <Title>Jingle 7</Title>
+    <Type>Jingle</Type>
+    <Duration>4.296</Duration>
+    <Database>mAirListDB:{C478F27C-A0A2-4A6C-AA0B-242F669CBB00}</Database>
+    <DatabaseID>24</DatabaseID>
+    <Attributes>
+      <Item>
+        <Name>Genre</Name>
+        <Value>Other</Value>
+      </Item>
+    </Attributes>
+    <Markers>
+      <Marker Type="CueIn" Position="0.049"/>
+      <Marker Type="FadeOut" Position="4.164"/>
+      <Marker Type="CueOut" Position="4.208"/>
+    </Markers>
+  </PlaylistItem>
+  <PlaylistItem Class="File" Version="156382" State="none" Time="08:53:45">
+    <Filename>\\nas\mairlist\Jazler Radio 2 Logs\MusicLogs\Etranger TC\Arlo Parks\Arlo Parks - Hurt.mp3</Filename>
+    <Title>Hurt</Title>
+    <Artist>Arlo Parks</Artist>
+    <Type>Music</Type>
+    <Duration>216.125</Duration>
+    <Database>mAirListDB:{C478F27C-A0A2-4A6C-AA0B-242F669CBB00}</Database>
+    <DatabaseID>5452</DatabaseID>
+    <Markers>
+      <Marker Type="CueIn" Position="0.018"/>
+      <Marker Type="StartNext" Position="212.066"/>
+      <Marker Type="FadeOut" Position="212.140"/>
+      <Marker Type="CueOut" Position="214.440"/>
+    </Markers>
+  </PlaylistItem>
+  <PlaylistItem Class="File" Version="156382" State="none" Time="08:57:18">
+    <Filename>\\nas\mairlist\Jazler Radio 2 Logs\SpotLogs\Auto Promos\AP Minute MDB 2020 2021.mp3</Filename>
+    <Title>AP Minute MDB 2019 2020</Title>
+    <Type>Promo</Type>
+    <Duration>12.226</Duration>
+    <Comment>0</Comment>
+    <Database>mAirListDB:{C478F27C-A0A2-4A6C-AA0B-242F669CBB00}</Database>
+    <DatabaseID>5306</DatabaseID>
+    <Timing>Soft</Timing>
+    <FixTime>08:57:30</FixTime>
+    <Markers>
+      <Marker Type="FadeOut" Position="11.442"/>
+      <Marker Type="CueOut" Position="12.226"/>
+    </Markers>
+  </PlaylistItem>
+  <PlaylistItem Class="AdContainer" AdDatabase="mAirListDB:{C478F27C-A0A2-4A6C-AA0B-242F669CBB00}" AdStation="1" AdSlot="2020-11-03T08:00:00" AdBlock="2" Version="156382" State="none" Time="08:57:29">
+    <Title>Bloc 2</Title>
+    <Artist>Publicité</Artist>
+    <Type>Advertising</Type>
+    <Options>
+      <FailsafeContainerPlayback/>
+    </Options>
+  </PlaylistItem>
+  <PlaylistItem Class="File" Version="156382" State="none" Time="08:57:29">
+    <Filename>\\nas\mairlist\Jazler Radio 2 Logs\SpotLogs\Comblage\Cesu Pajemploi.mp3</Filename>
+    <Title>Cesu Pajemploi</Title>
+    <Artist>Seprem</Artist>
+    <Duration>34.992</Duration>
+    <Database>mAirListDB:{C478F27C-A0A2-4A6C-AA0B-242F669CBB00}</Database>
+    <DatabaseID>5573</DatabaseID>
+    <Attributes>
+      <Item>
+        <Name>Année</Name>
+        <Value>2019</Value>
+      </Item>
+    </Attributes>
+    <Markers>
+      <Marker Type="CueIn" Position="0.015"/>
+      <Marker Type="FadeOut" Position="33.973"/>
+      <Marker Type="CueOut" Position="34.728"/>
+    </Markers>
+  </PlaylistItem>
+  <PlaylistItem Class="Dummy" Version="156382" State="none" Time="08:58:03">
+    <Title>Fin de L'heure</Title>
+    <Timing>Soft</Timing>
+    <Options>
+      <PreventFloat/>
+    </Options>
+    <FixTime>09:00:00</FixTime>
+  </PlaylistItem>
+</Playlist>
