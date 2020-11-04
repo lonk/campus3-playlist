@@ -60,24 +60,26 @@ export const useDisplay = () => {
       const displayProgressBar = data.$.State === 'playing';
 
       const playbackEnd =
-        data.$.State === 'playing' ? parseFloat(data.$.PlaybackEnd) * 100 : 1;
+        data.$.State === 'playing' ? parseFloat(data.$.PlaybackEnd) * 1000 : 1;
 
       const playbackPosition =
         data.$.State === 'playing'
           ? Math.min(
-              parseFloat(data.$.PlaybackPosition) * 100 +
+              parseFloat(data.$.PlaybackPosition) * 1000 +
                 millisecondsSinceLastPolling.value,
               playbackEnd
             )
           : 0;
 
       const completion =
-        data.$.State === 'playing' ? (playbackPosition / playbackEnd) * 100 : 0;
+        data.$.State === 'playing'
+          ? (playbackPosition / playbackEnd) * 1000
+          : 0;
 
       const label =
         data.$.State === 'playing'
-          ? `${(playbackPosition / 100).toFixed(0)}s / ${(
-              playbackEnd / 100
+          ? `${(playbackPosition / 1000).toFixed(0)}s / ${(
+              playbackEnd / 1000
             ).toFixed(0)}s`
           : `0s / ${data.Duration}s`;
 

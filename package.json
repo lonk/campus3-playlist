@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "xml": "static xml -p 8500 -H '{\"Access-Control-Allow-Origin\": \"*\"}'"
+    "xml": "static xml -p 8500 -H '{\"Access-Control-Allow-Origin\": \"*\", \"Access-Control-Allow-Headers\": \"*\"}'"
   },
   "dependencies": {
     "axios": "^0.21.0",
