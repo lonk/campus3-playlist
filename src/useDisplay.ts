@@ -73,7 +73,7 @@ export const useDisplay = () => {
 
       const completion =
         data.$.State === 'playing'
-          ? (playbackPosition / playbackEnd) * 1000
+          ? (playbackPosition / playbackEnd) * 100
           : 0;
 
       const label =
